@@ -4,7 +4,7 @@ const postsRoutes = require("./api/posts/posts.routes");
 const connectDb = require("./database");
 const morgan = require("morgan");
 const cors = require("cors");
-
+const path = require("path");
 connectDb();
 app.use(morgan("dev"));
 app.use(cors());
